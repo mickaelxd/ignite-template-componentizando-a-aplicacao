@@ -12,7 +12,7 @@ interface SideBarProps {
     genres: Array<GenreResponseProps>
 }
 
-export function SideBar({genres, handleClickButton, selectedGenreId}: SideBarProps) {
+const SideBar = ({genres, handleClickButton, selectedGenreId}: SideBarProps) => {
     return (
         <nav className="sidebar">
             <span>Watch<p>Me</p></span>
@@ -32,3 +32,5 @@ export function SideBar({genres, handleClickButton, selectedGenreId}: SideBarPro
         </nav>
     )
 }
+
+export default SideBar;
